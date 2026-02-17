@@ -1,122 +1,194 @@
+/* ===== Base Styling ===== */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    background: #f5f5f5;
+    color: #222;
 }
 
-/* Header */
+/* ===== Header ===== */
+
 header {
     background: #111;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
+    gap: 2rem;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #c8a96a; /* luxury gold */
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
+
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') no-repeat center center/cover;
-    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1520975922203-bdbd6f6c9e4e?auto=format&fit=crop&w=1400&q=80') center/cover;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 0 1rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
-/* Products */
+.hero button {
+    background: #c8a96a;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #b08d57;
+}
+
+/* ===== Products Section ===== */
+
 .products {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
 }
 
+/* ===== Product Card ===== */
+
 .product {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    padding: 1.5rem;
-    transition: transform 0.2s ease;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
 .product:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
+
+/* Product Image */
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-button {
+/* Product Name */
+
+.product h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 15px 0 8px;
+    font-size: 1.3rem;
+}
+
+/* Price */
+
+.product p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* ===== Add to Cart Button ===== */
+
+.product button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
     background: #111;
-    color: #fff;
+    color: white;
     border: none;
-    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.2s ease;
+    transition: 0.3s;
 }
 
-button:hover {
-    background: #444;
+.product button:hover {
+    background: #c8a96a;
+    color: black;
 }
 
-/* About & Contact */
-.about, .contact {
-    padding: 3rem 2rem;
-    text-align: center;
-    background: #fff;
-}
+/* ===== About Section ===== */
 
-/* Footer */
-footer {
+.about {
+    padding: 4rem 2rem;
     background: #111;
-    color: #fff;
+    color: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+/* ===== Contact ===== */
+
+.contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    background: #000;
+    color: white;
     text-align: center;
     padding: 1rem;
+    font-size: 0.9rem;
 }
