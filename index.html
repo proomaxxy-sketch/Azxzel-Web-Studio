@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothify - Your Style Destination</title>
+
+    <!-- Luxury Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Clothify | Luxury Fashion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -14,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#products">Shop</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
@@ -24,66 +29,60 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Welcome to Clothify</h1>
-        <p>Discover the latest trends in fashion.</p>
-        <button onclick="scrollToProducts()">Shop Now</button>
+        <h1>Elevate Your Style</h1>
+        <p>Luxury fashion crafted for confidence.</p>
+        <button onclick="scrollToProducts()">Explore Collection</button>
     </section>
 
     <!-- Products Section -->
     <section id="products" class="products">
-        <h2>Our Products</h2>
+        <h2>Featured Collection</h2>
 
         <div class="product-grid">
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Cotton T-Shirt">
-                <h3>Cotton T-Shirt</h3>
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="T-Shirt">
+                <h3>Premium Cotton T-Shirt</h3>
                 <p>$19.99</p>
-                <button onclick="addToCart('Cotton T-Shirt', 19.99)">
-                    Add to Cart
-                </button>
+                <button onclick="addToCart('Premium Cotton T-Shirt', 19.99)">Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Denim Jeans">
-                <h3>Denim Jeans</h3>
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80" alt="Jeans">
+                <h3>Signature Denim Jeans</h3>
                 <p>$49.99</p>
-                <button onclick="addToCart('Denim Jeans', 49.99)">
-                    Add to Cart
-                </button>
+                <button onclick="addToCart('Signature Denim Jeans', 49.99)">Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1520975922284-8b456906c813" alt="Leather Jacket">
-                <h3>Leather Jacket</h3>
+                <img src="https://images.unsplash.com/photo-1520975922203-bdbd6f6c9e4e?auto=format&fit=crop&w=600&q=80" alt="Jacket">
+                <h3>Luxury Leather Jacket</h3>
                 <p>$99.99</p>
-                <button onclick="addToCart('Leather Jacket', 99.99)">
-                    Add to Cart
-                </button>
+                <button onclick="addToCart('Luxury Leather Jacket', 99.99)">Add to Cart</button>
             </div>
 
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
-        <h2>About Us</h2>
+        <h2>About Clothify</h2>
         <p>
-            Clothify is your ultimate style destination.
-            We provide premium quality fashion for every occasion.
+            Clothify blends timeless elegance with modern design.
+            Crafted for individuals who value premium quality and refined style.
         </p>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: info@clothify.com</p>
+        <h2>Contact Us</h2>
+        <p>Email: support@clothify.com</p>
         <p>Phone: +1 234 567 890</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2023 Clothify. All rights reserved.</p>
+        <p>© 2026 Clothify. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
